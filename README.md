@@ -13,7 +13,7 @@ A modern, interactive word guessing game that brings the classic hangman experie
 
 ## 🚀 Play Now
 
-[**🎯 Play WordStrike**](https://github.com/Prithvish7/guessit_game.git)
+[**🎯 Play WordStrike**](https://prithvish7.github.io/guessit_game/)
 
 ## 🛠️ Built With
 
