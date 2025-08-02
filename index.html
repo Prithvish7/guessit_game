@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GuessIt</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game-container">
+    <h1>GuessIt</h1>
+    <p id="hint" class="hint">Hint: </p>
+    <div id="wordDisplay" class="word"></div>
+    <canvas id="hangmanCanvas" width="200" height="250"></canvas>
+    <p id="wrongLetters"></p>
+    <div class="keyboard" id="keyboard"></div>
+    
+    <!-- WIN OVERLAY (appears over the game box like watermark) -->
+    <div id="winOverlay" class="win-overlay">
+      <div class="win-text">🎉 YOU WON! 🎉</div>
+      <div class="popup-buttons">
+        <button class="popup-btn btn-reset" id="resetWin">Reset</button>
+        <button class="popup-btn btn-new-game" id="newGameWin">New Game</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- LOSE POPUP (appears as modal over entire screen) -->
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <h2>😞 Better Luck Next Time!</h2>
+      <p id="message">The word was: <strong id="correctWord"></strong></p>
+      <div class="popup-buttons">
+        <button class="popup-btn btn-reset" id="reset">Reset</button>
+        <button class="popup-btn btn-new-game" id="newGame">New Game</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
